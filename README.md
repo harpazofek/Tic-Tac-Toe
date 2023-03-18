@@ -1,4 +1,4 @@
-# py-project1
+# Tic-Tac-Teo
 
 
 Project 1 :
