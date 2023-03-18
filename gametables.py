@@ -13,7 +13,4 @@ from main import table_size
 if table_size == 1:
     print("Test")
 else:
-    print(((f
-["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ]
-
-        )))
+    print(f["{_}", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ])
