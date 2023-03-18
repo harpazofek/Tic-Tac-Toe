@@ -1,4 +1,4 @@
-<!-- # py-project1
+# py-project1
 
 
 Project 1 :
@@ -18,4 +18,4 @@ Project 1 :
      blabla bla
 
 - deadline : 28.3.2023 23:59
-  -->
+ 
