@@ -9,11 +9,11 @@ Project 1 :
         2. guess the word - https://devsecops12.files.wordpress.com/2023/03/project1.pdf
 - write the code and upload the files to your github - Done!
     Repository link is:
-        https://github.com/harpazofek/py-project1
+        https://github.com/harpazofek/Tic-Tac-Toe
 - send an email to **hothaifazoubi@gmail.com**  with : 
      - your full name - Ofek Harpaz
      - your id - id???????
-     - project link - https://github.com/harpazofek/py-project1
+     - project link - https://github.com/harpazofek/Tic-Tac-Toe
      - notes - Hi Hodi,
      blabla bla
 
