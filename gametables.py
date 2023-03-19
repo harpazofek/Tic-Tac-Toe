@@ -4,7 +4,7 @@ def game_tables(table):
         print([f"1", "2", "3" ], [f"4", "5", "6" ], [f"7", "8", "9" ])
     elif table == "2":
         print("Board selected - 4X4 board.")
-        print(["1", "2", "3" ], ["4", "5", "6" ], ["7", "8", "9" ])
+        print(["1", "2", "3" ], ["4", "5", "6" ], ["7", "8", "9" ], ["10", "11", "12" ])
     elif table == "3":
         print("Game Shotdown.")
         
