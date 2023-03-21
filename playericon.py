@@ -1,8 +1,10 @@
 def player_icon(icon):
-    print("Chose your player icon : (X) or (O)")
+
     if icon == "1":
+        icon = "X"
         print("icon selected is : X ")
     elif icon == "2":
+        icon == "O"
         print("icon selected is : O ")
     else:
         print("Invalid input. Please select 1 or 2 ")   
