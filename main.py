@@ -1,26 +1,41 @@
-# # Game TIC TAC TOE:
+
+# Game TIC TAC TOE:
 import math
 
 # Hellow User:
 from hellow_user import hello
 
 # Game Settings
-from functions import game_settings # this function set the game menu to stdout
-# game_settings = ""
+# from appmenu import game_settings # this function set the game menu to stdout
 # print(game_settings)
 
+# This function select the table size like "3X3 4X4 etc..."
+from gametables import table_size
+table_size = ""
+if table_size == "3":
+    raise SystemExit
+# if table_size == "3":
+#     raise Exception("Quit Game")
 # Player Icon: "X" or "O"
 from playericon import icon_slected # plyer icon like "X" or "O"
+# print(f'{icon_slected} for debug')
 
-# print(f'{icon_slected} for febug')
+running = True
+game_done = False
+table = {table_size}
+icon = icon_slected
 
-
-# from tables import table_graphics # this function set the size of the table "3X3" or "4X4"
-# from tables import table_size
-# 
-# import numpy as np
-# import matplotlib.pyplot as plt
-# 
-# plt.imshow(np.random.random((50,50)))
-# plt.colorbar()
-# plt.show()
+while running:
+        print(f'Player icon turn is : {icon_slected}')
+        print(f'{table_size}')
+        print
+        row_selection = int[input("Row selection :  ")]
+        colum_selection = int[input("Colum selection : ")]
+        if row_selection or colum_selection == str:
+            running = False
+        elif row_selection and colum_selection == int:
+            print(f'{row_selection}, {colum_selection}')
+        else: 
+            print("Game Done!")
+            game_done = True
+print("GG - ba lan ;) ")

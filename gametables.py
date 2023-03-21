@@ -13,27 +13,28 @@
 def game_tables(table):
     if table == "1":
         print("Board selected - 3X3 board.")
-        table = [
-        ["_", "_", "_" ], 
-        ["_", "_", "_" ], 
-        ["_", "_", "_" ], 
-        ]
-        # table[0][1] = 20
-        print(table)
+        table = [["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ]]
+        for row in table:
+                print("+---+---+---+")
+                print("|", end="")
+                for col in row:
+                    print(" {} |".format(col), end="")
+                print()
+        print("+---+---+---+")
     elif table == "2":
-        print("Board selected - 4X4 board.")
-        table = [
-        ["_", "_", "_" ], 
-        ["_", "_", "_" ], 
-        ["_", "_", "_" ], 
-        ["_", "_", "_" ]
-        ]
-        # table[1][2] = 40
-        # print(table[1][2])
-        print(table)
+        print("Board selected - 4X4 board.")        
+        table = [["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ]]
+        for row in table:
+                print("+---+---+---+")
+                print("|", end="")
+                for col in row:
+                    print(" {} |".format(col), end="")
+                print()
+        print("+---+---+---+")
     elif table == "3":
         print("Game Shotdown.")
-        return
+        for quit in table:
+            break
     else:
         print("Invalid input. Please select 1 or 2 or 3")   
 table_size = input("Which board do you prefer to play on?\n(1) 3X3\n(2) 4X4\n(3) Quit \n> ")
