@@ -14,7 +14,7 @@ Project 1 :
         https://github.com/harpazofek/Tic-Tac-Toe
 - send an email to **hothaifazoubi@gmail.com**  with : 
      - your full name - Ofek Harpaz
-     - your id - id???????
+     - your id - 308******
      - project link - https://github.com/harpazofek/Tic-Tac-Toe
      - notes - Hi Hodi,
      blabla bla
