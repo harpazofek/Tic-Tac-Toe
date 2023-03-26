@@ -4,8 +4,7 @@ def game_tables(table):
     elif table == "2":
         print("Board selected - 4X4 board.")        
     elif table == "3":
-        print("Game Shutdown.")
-        quit("Error 1")
+        quit("Error 1 Game Shutdown.")
     else:
         print("Invalid input. Please select 1 or 2 or 3")   
 
