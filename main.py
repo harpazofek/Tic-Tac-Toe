@@ -17,27 +17,28 @@ from gametables import table_matrix
 
 running = True
 game_done = False
-icon_slected = "X"
 player1 = "X"
 player2 = "O"
+# icon_slected = "X"
+# empty_list = []
 # pcplayer = True
 
 if table_matrix != "1":
     table = [["_", "_", "_", "_" ], ["_", "_", "_", "_" ], ["_", "_", "_", "_" ], ["_", "_", "_", "_" ]]
 else:
     table = [["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ]]
-
+if icon_slected != "1":
+    icon_slected = "O"
+else:
+    icon_slected = "X"
 while running:
     for row in table:                                                               ## This for loop was present the table like table and not like the list
         print("+---+---+---+")
         print("|", end="")
         for col in row:
-            # print(" {} |".format(col), end="")
             print(" {} |".format(col), end="")
         print()
-    print("+---+---+---+")
-    # if icon_slected == player2 and pcplayer == True:
-    #     for row in table:
+    print("+---+---+---+")            
     rowlst = int(input("Row selection: "))
     collst = int(input("Column selection: "))
     if 1 <= rowlst <= len(table) and 1 <= collst <= len(table[0]):      ## Check if the row and column are within the valid range
