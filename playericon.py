@@ -9,5 +9,5 @@ def player_icon(icon):
     else:
         print("Invalid input. Please select 1 or 2 ")   
 icon_slected = input("Select your player icon :\n(1): X\n(2): O\n> ")
-icon_slected = icon_slected.capitalize()
+icon_slected = icon_slected.upper()
 player_icon(icon=icon_slected)
