@@ -5,17 +5,23 @@ import random
 # Hellow User:
 from functions import *
 
+
 running = True
 game_done = False
 player1 = "X"
 player2 = "O"
 icon_slected = "X"
 
-
 if table_matrix != "1":
     table = [["_", "_", "_", "_" ], ["_", "_", "_", "_" ], ["_", "_", "_", "_" ], ["_", "_", "_", "_" ]]
-else:
+    turn = 16
+elif table_matrix != "2":
     table = [["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ]]
+    turn = 9
+else:
+    quit()
+
+
 
 
 hello()
@@ -39,6 +45,9 @@ while running:
             icon_slected = player1
     else:
         print("Invalid input. Please choose a row and column within the valid range.")
+    # gameTurn(turn)
+    # if turn == 0:
+    #     print("Drew")
     if game_done:
         running = False
         game_done = True
