@@ -4,36 +4,40 @@ def hello():
 
 
 ## With this function we can select the icon of the player.
-def player_icon(icon):
-    if icon == "1":
-        icon = "X"
-        print("icon selected is : X ")
-    elif icon == "2":
-        icon == "O"
-        print("icon selected is : O ")
+def get_icon():
+    icon_selected = input("Select your player icon:\n(1) X\n(2) O\n> ")
+    if icon_selected == "1":
+        return "X"
+    elif icon_selected == "2":
+        return "O"
     else:
-        print("Invalid input. Please select 1 or 2 ")   
-    icon_slected = input("Select your player icon :\n(1): X\n(2): O\n> ")
-    icon_slected.upper()
+        print("Invalid input. Please select 1 or 2.")
+        return get_icon()
+
 
 
 ## With this function we can select board table of the game
-def game_tables(table):
-    if table == "1":
+def game_tables():
+    table_matrix = input("Which board do you prefer to play on?\n(1) 3X3\n(2) 4X4\n> ")
+    if table_matrix == "1":
         print("Board selected - 3X3 board.")
-    elif table == "2":
-        print("Board selected - 4X4 board.")        
-    # elif table == "3":
-    #     quit("Error 1 Game Shutdown.")
+        table = [["_", "_", "_" ], ["_", "_", "_" ], ["_", "_", "_" ]]
+        return table
+    elif table_matrix == "2":
+        print("Board selected - 4X4 board.")
+        table = [["_", "_", "_", "_" ], ["_", "_", "_", "_" ], ["_", "_", "_", "_" ], ["_", "_", "_", "_" ]]
+        return table
     else:
-        print("Invalid input. Please select 1 or 2 or 3") 
-table_matrix = input("Which board do you prefer to play on?\n(1) 3X3\n(2) 4X4\n> ")
+        print("Invalid input. Please select 1 or 2 ")
+    return None
+    
 
 
 ## This functions will print the board table like a board and not like list
 ## Its deppend of the board selection if you select the 3X3 or the 4X4 
 def displayboard(table):
-    if table_matrix != "2":
+    print(len(table))
+    if len(table) != 4:
         for row in table:                   
             print("+---+---+---+")
             print("|", end="")
@@ -41,7 +45,7 @@ def displayboard(table):
                 print(" {} |".format(col), end="")
             print()
         print("+---+---+---+")
-    elif table_matrix != "1":
+    elif len(table) != 3:
         for row in table:                                                               
             print("+---+---+---+---+")
             print("|", end="")
@@ -50,7 +54,7 @@ def displayboard(table):
             print()
         print("+---+---+---+---+")
     else:
-        print("Game Shutdown.")
+        print("Display board")
         quit()
 
 
@@ -91,16 +95,5 @@ def checkTable(table, player):
             elif table[0][2] == table[1][1] == table[2][0] == table[3][0] == (f'{player}'):
                 return player
     return None
-
-# def gameTurn(turn):
-#     for drew in turn:
-#         drew = turn - 1
-#         return turn
-
-# def gameDone(regame):
-
-
-
-
 
 
