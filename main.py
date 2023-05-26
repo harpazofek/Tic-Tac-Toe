@@ -1,4 +1,4 @@
-# Game TIC TAC TOE:
+# Game TIC TAC TOE: #
 import math
 import random
 
